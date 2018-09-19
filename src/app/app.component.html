@@ -1,3 +1,19 @@
-<h3 class="display-4 font-weight-bold text-center pt-5">I`m Shturman</h3>
-<hr>
-<app-server></app-server>
+<!--<h3 class="display-4 font-weight-bold text-center pt-5">I`m Shturman</h3>-->
+<!--<hr>-->
+<!--<label>Server name</label>-->
+<!--<input type="text" class="form-control" [(ngModel)]="serverName">-->
+<!--<button class="btn btn-danger m-auto" (click)="onCreateServer()">Add server</button>-->
+<!--<p>{{serverCreationStatus}}</p>-->
+<!--<app-server></app-server>-->
+<!--<hr>-->
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <label>Username</label>
+      <br>
+      <input type="text" [(ngModel)]="username" class="form-control">
+      <p>{{username}}</p>
+      <button class="btn btn-outline-success" [disabled]="username === ''" (click)="username = ''" >Clear</button>
+    </div>
+  </div>
+</div>
