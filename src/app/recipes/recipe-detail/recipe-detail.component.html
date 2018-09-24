@@ -1,34 +1,24 @@
-<div class="row pt-3">
-  <div class="col-sm-12">
-    <img src="" alt="" class="img-responsive">
-  </div>
-</div>
-<div class="row">
-  <div class="col-sm-12">
-    <h1>Recipe Name</h1>
-  </div>
-</div>
-<div class="row">
-  <div class="col-sm-12">
-    <div class="btn-group">
-      <button type="button" class="btn btn-danger dropdown-toggle">
-        Manage Recipe <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu">
-        <li><a href="#">Add Ingredients</a></li>
-        <li><a href="#">Edit Recipe</a></li>
-        <li><a href="#">Delete Recipe</a></li>
-      </ul>
+<div class="row pt-5 mt-4">
+  <div class="col-8 pt-5">
+    <div class="card">
+      <img class="card-img-top img-responsive" [src]="recipe.imagePath" alt="{{recipe.name}}" style="max-height: 503px">
+      <div class="card-body">
+        <h5 class="card-title">{{recipe.name}}</h5>
+        <p class="card-text">{{recipe.description}}</p>
+        <div class="btn-group">
+          <button type="button" class="btn btn-danger dropdown-toggle">
+            Manage Recipe <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Add Ingredients</a></li>
+            <li><a href="#">Edit Recipe</a></li>
+            <li><a href="#">Delete Recipe</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-<div class="row">
-  <div class="col-sm-12">
-    Description
-  </div>
-</div>
-<div class="row">
-  <div class="col-sm-12">
+  <div class="col-4 pt-5">
     Ingredients
   </div>
 </div>
